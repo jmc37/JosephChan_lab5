@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF9800"
+    tools:context=".ArenaFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/vs_fragmentArena"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="110px"
+        android:text="@string/VS"
+        android:textSize="34sp" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerView"
+        android:name="com.example.josephchan_lab5.FighterFragment"
+        android:layout_width="356dp"
+        android:layout_height="274dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20px"
+        tools:layout="@layout/fragment_fighter" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerView2"
+        android:name="com.example.josephchan_lab5.FighterFragment"
+        android:layout_width="371dp"
+        android:layout_height="266dp"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="300px"
+        tools:layout="@layout/fragment_fighter" />
+
+    <Button
+        android:id="@+id/home_fragmentArena"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="30px"
+        android:text="@string/Home" />
+
+    <Button
+        android:id="@+id/nextbattle_fragmentArena"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginRight="30px"
+        android:text="@string/nextBattle" />
+
+</FrameLayout>

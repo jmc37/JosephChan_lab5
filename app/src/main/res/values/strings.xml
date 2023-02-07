@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">JosephChan_lab5</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="gotoarena">Go To Arena</string>
+    <string name="Starwarsmain">Star Wars battle Arena</string>
+    <string name="winorlose">winorlose</string>
+    <string name="characterName">characterName</string>
+    <string name="Home">Home</string>
+    <string name="nextBattle">nextBattle</string>
+    <string name="VS">VS</string>
+</resources>
