@@ -36,7 +36,7 @@
         tools:layout="@layout/fragment_fighter" />
 
     <Button
-        android:id="@+id/home_fragmentArena"
+        android:id="@+id/home_fragmentArena_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
@@ -44,7 +44,7 @@
         android:text="@string/Home" />
 
     <Button
-        android:id="@+id/nextbattle_fragmentArena"
+        android:id="@+id/nextbattle_fragmentArena_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|right"

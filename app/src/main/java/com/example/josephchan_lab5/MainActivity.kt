@@ -9,11 +9,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
     }
-    fun swapFragments(v: View){
-        val fragmentTransaction = supportFragmentManager.beginTransaction()
-        fragmentTransaction.replace(R.id.fragmentContainer_main, FighterFragment())
-        fragmentTransaction.commit()
-    }
+
 
 
 }
