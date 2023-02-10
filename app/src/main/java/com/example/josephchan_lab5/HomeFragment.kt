@@ -1,11 +1,13 @@
 package com.example.josephchan_lab5
 
+import android.media.MediaPlayer
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import androidx.fragment.app.Fragment
+
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -39,13 +41,14 @@ class HomeFragment : Fragment() {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_home, container, false)
     }
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        val arenaFragment = ArenaFragment.newInstance()
+
         val button = view.findViewById<Button>(R.id.gotoarenabutton_main)
         button.setOnClickListener{
             val fragmentTransaction = this.parentFragmentManager.beginTransaction()
-            fragmentTransaction.replace(R.id.fragmentContainer_main, ArenaFragment())
+            fragmentTransaction.add(R.id.fragmentContainer_main, arenaFragment, "ARENA-FRAGMENT-TAG")
             fragmentTransaction.commit()
         }
     }
@@ -61,7 +64,7 @@ class HomeFragment : Fragment() {
          */
         // TODO: Rename and change types and number of parameters
         @JvmStatic
-        fun newInstance(param1: String, param2: String) =
+        fun newInstance() =
             HomeFragment().apply {
                 arguments = Bundle().apply {
                     putString(ARG_PARAM1, param1)

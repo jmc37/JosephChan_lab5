@@ -41,7 +41,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
         android:layout_marginLeft="30px"
-        android:text="@string/Home" />
+        android:text="@string/Home"
+        android:textSize="20sp" />
 
     <Button
         android:id="@+id/nextbattle_fragmentArena_button"
@@ -49,6 +50,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|right"
         android:layout_marginRight="30px"
-        android:text="@string/nextBattle" />
+        android:text="@string/nextBattle"
+        android:textSize="24sp" />
 
 </FrameLayout>

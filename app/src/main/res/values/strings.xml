@@ -9,4 +9,7 @@
     <string name="Home">Home</string>
     <string name="nextBattle">nextBattle</string>
     <string name="VS">VS</string>
+    <string name="Winner">Winner</string>
+    <string name="loser">Loser</string>
+    <string name="tie">Tie</string>
 </resources>
