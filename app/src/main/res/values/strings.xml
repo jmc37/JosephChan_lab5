@@ -12,4 +12,5 @@
     <string name="Winner">Winner</string>
     <string name="loser">Loser</string>
     <string name="tie">Tie</string>
+    <string name="starwars">starwars</string>
 </resources>

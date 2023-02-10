@@ -83,8 +83,8 @@ class ArenaFragment : Fragment() {
             }
         }
         val ft = parentFragmentManager.beginTransaction()
-        ft.replace(R.id.fragmentContainerView, FighterFragment.newInstance(character1, firstFighterDecision))
-        ft.replace(R.id.fragmentContainerView2, FighterFragment.newInstance(character2, secondFighterDecision))
+        ft.replace(R.id.fragmentContainerViewFighterOne, FighterFragment.newInstance(character1, firstFighterDecision))
+        ft.replace(R.id.fragmentContainerViewFighterTwo, FighterFragment.newInstance(character2, secondFighterDecision))
         ft.commit()
     }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -107,8 +107,6 @@ class ArenaFragment : Fragment() {
          * Use this factory method to create a new instance of
          * this fragment using the provided parameters.
          *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
          * @return A new instance of fragment ArenaFragment.
          */
         // TODO: Rename and change types and number of parameters

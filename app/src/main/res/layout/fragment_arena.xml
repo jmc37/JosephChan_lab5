@@ -13,26 +13,26 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginBottom="110px"
+        android:layout_marginBottom="50dp"
         android:text="@string/VS"
         android:textSize="34sp" />
 
     <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/fragmentContainerView"
+        android:id="@+id/fragmentContainerViewFighterOne"
         android:name="com.example.josephchan_lab5.FighterFragment"
         android:layout_width="356dp"
         android:layout_height="274dp"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="20px"
+        android:layout_marginTop="10dp"
         tools:layout="@layout/fragment_fighter" />
 
     <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/fragmentContainerView2"
+        android:id="@+id/fragmentContainerViewFighterTwo"
         android:name="com.example.josephchan_lab5.FighterFragment"
         android:layout_width="371dp"
         android:layout_height="266dp"
         android:layout_gravity="bottom|center"
-        android:layout_marginBottom="300px"
+        android:layout_marginBottom="110dp"
         tools:layout="@layout/fragment_fighter" />
 
     <Button
@@ -40,7 +40,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
-        android:layout_marginLeft="30px"
+        android:layout_marginStart="10dp"
         android:text="@string/Home"
         android:textSize="20sp" />
 
@@ -48,8 +48,8 @@
         android:id="@+id/nextbattle_fragmentArena_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom|right"
-        android:layout_marginRight="30px"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="10dp"
         android:text="@string/nextBattle"
         android:textSize="24sp" />
 

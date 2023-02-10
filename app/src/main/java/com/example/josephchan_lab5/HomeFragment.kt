@@ -1,6 +1,5 @@
 package com.example.josephchan_lab5
 
-import android.media.MediaPlayer
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -56,14 +55,6 @@ class HomeFragment : Fragment() {
 
     }
     companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment HomeFragment.
-         */
         // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance() =
