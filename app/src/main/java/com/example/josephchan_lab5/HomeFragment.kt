@@ -41,18 +41,20 @@ class HomeFragment : Fragment() {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_home, container, false)
     }
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val arenaFragment = ArenaFragment.newInstance()
-
         val button = view.findViewById<Button>(R.id.gotoarenabutton_main)
         button.setOnClickListener{
             val fragmentTransaction = this.parentFragmentManager.beginTransaction()
-            fragmentTransaction.add(R.id.fragmentContainer_main, arenaFragment, "ARENA-FRAGMENT-TAG")
+            val arenaFragment = parentFragmentManager.findFragmentByTag("ARENAFRAGMENT_TAG")
+            val homeFragment = parentFragmentManager.findFragmentByTag("HOMEFRAGMENT_TAG")
+            fragmentTransaction.show(arenaFragment!!)
+            fragmentTransaction.hide(homeFragment!!)
             fragmentTransaction.commit()
         }
-    }
 
+    }
     companion object {
         /**
          * Use this factory method to create a new instance of

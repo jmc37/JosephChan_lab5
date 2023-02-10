@@ -93,8 +93,11 @@ class ArenaFragment : Fragment() {
         fight()
         button.setOnClickListener{
             val fragmentTransaction = this.parentFragmentManager.beginTransaction()
-            fragmentTransaction.replace(R.id.fragmentContainer_main, HomeFragment())
-            fragmentTransaction.commit()
+            val arenaFragment = parentFragmentManager.findFragmentByTag("ARENAFRAGMENT_TAG")
+            val homeFragment = parentFragmentManager.findFragmentByTag("HOMEFRAGMENT_TAG")
+                fragmentTransaction.hide(arenaFragment!!)
+                fragmentTransaction.show(homeFragment!!)
+                fragmentTransaction.commit()
         }
         val nextButton = view.findViewById<Button>(R.id.nextbattle_fragmentArena_button)
         nextButton.setOnClickListener { fight() }
