@@ -1,5 +1,6 @@
 package com.example.josephchan_lab5
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.os.Parcelable
 import androidx.fragment.app.Fragment
@@ -87,6 +88,7 @@ class ArenaFragment : Fragment() {
         ft.replace(R.id.fragmentContainerViewFighterTwo, FighterFragment.newInstance(character2, secondFighterDecision))
         ft.commit()
     }
+    @SuppressLint("SuspiciousIndentation")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val button = view.findViewById<Button>(R.id.home_fragmentArena_button)

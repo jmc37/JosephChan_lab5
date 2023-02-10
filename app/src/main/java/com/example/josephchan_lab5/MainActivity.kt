@@ -1,5 +1,6 @@
 package com.example.josephchan_lab5
 
+import android.media.MediaPlayer
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
@@ -9,6 +10,8 @@ class MainActivity : AppCompatActivity() {
         supportActionBar?.hide()
         setContentView(R.layout.activity_main)
         createAndAddFragments()
+//        val mediaPlayer = MediaPlayer.create(this, R.raw.Star)
+//        mediaPlayer.start()
     }
 
 
